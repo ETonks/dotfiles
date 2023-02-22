@@ -1,0 +1,38 @@
+#
+# ~/.bashrc
+#
+#this comment is speshul
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='lsd -ahl'
+alias cat='bat'
+alias calc='scilab-cli'
+
+alias mv='mv -i'
+alias rm='rm -i'
+alias bc='bc -lq'
+
+neofetch
+
+PS1='  \W \$ '
+
+#environment variables
+
+# quartus shit
+#export QSYS_ROOTDIR="/home/main/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"
+
+#trying to get the joystick to work
+SDL_JOYSTICK_DEVICE=/dev/input/js0
+
+#Kustom shit
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export HISTCONTROL=ignoreboth
+export CLICOLOR=1
+export TERM=alacritty
+
+unset LS_PRELOAD
+
+export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json
