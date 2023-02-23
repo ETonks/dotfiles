@@ -1,0 +1,5 @@
+[user]
+	email = aptgetyou@gmail.com
+	name = Elliot Tonks
+[pull]
+	rebase = false
